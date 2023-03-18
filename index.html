@@ -332,33 +332,33 @@
     </main>
     <footer>
       <section class="main-background-footer">
-        <div class="container footbar-elements">
-          <div class="container footbar">
-            <a class="logo-font" href="index.html"
+        <div class="container footbar">
+          <div class="container footbar__elements">
+            <a class="footbar__elements--logo-font" href="index.html"
               ><span class="accent">Web</span
               ><span class="logo-word">Studio</span></a
             >
-            <address class="address">
+            <address class="footbar__elements__adress">
               <ul>
                 <li>
                   <a href="https://goo.gl/maps/kf3q6MZRdZTSeFfu9"
                     >m.Warszawa, Aleje Jerozolimskie 21</a
                   >
                 </li>
-                <li class="mail">
+                <li class="footbar__elements__mail">
                   <a href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li class="telephone">
+                <li class="footbar__elements__telephone">
                   <a href="tel:+48111111111">+48 111 111 111</a>
                 </li>
               </ul>
             </address>
           </div>
-          <div class="container footbar-social">
-            <ul>
+          <div class="container footbar__social">
+            <ul class="footbar__social__list">
               <li><span class="social-text">DOŁĄCZ DO NAS</span></li>
               <li>
-                <div class="icon-social-footer">
+                <div class="footbar__social__icon-social-footer">
                   <svg class="footer-icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
@@ -375,19 +375,21 @@
               </li>
             </ul>
           </div>
-          <form class="cointainer footbar-newsletter" name="newstletter-form">
-            <label class="newsletter-label">
-              <span class="newsletter-text">ZAPISZ SIĘ DO NEWSLETTERA</span>
+          <form class="cointainer footbar__newsletter" name="newstletter-form">
+            <label class="footbar__newsletter-label">
+              <span class="footbar__newsletter-text"
+                >ZAPISZ SIĘ DO NEWSLETTERA</span
+              >
               <input
-                class="input-mail"
+                class="footbar__newsletter__input-mail"
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
               />
             </label>
-            <div class="button-position">
-              <button type="submit" class="newsletter-button">
-                <span class="joinus">Zapisz się</span>
+            <div class="footbar__button-position">
+              <button type="submit" class="footbar__newsletter-button">
+                <span class="footbar__newsletter__joinus">Zapisz się</span>
                 <svg class="send-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
@@ -400,7 +402,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>X</button>
-        <h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
+        <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="modal-details" name="signup_form" autocomplete="on">
           <label class="input-container">
             <span class="label-text">Imię</span>

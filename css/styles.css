@@ -265,7 +265,7 @@ button:focus {
   background-color: var(--accent-color);
 }
 
-.buttons-category {
+.buttons--portfolio {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -287,13 +287,13 @@ button:focus {
   border-radius: 4px;
 }
 
-.card-projects {
+.portfolio__card-projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.project-item {
+.portfolio__project-item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
@@ -338,23 +338,26 @@ button:focus {
   border-radius: 0px 0px 4px 4px;
 }
 
-.cards-portfolio {
+.portfolio__cards {
   max-width: 400px;
   margin: 0;
   background-color: var(--third-color);
   cursor: pointer;
 }
 
-.cards-portfolio:hover,
-.cards-portfolio:focus {
+.portfolio__cards:hover,
+.portfolio__cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards-portfolio:hover .overlay {
+.portfolio__cards:hover .overlay {
   transform: translatex(0);
 }
-
+.portfolio__cards--skin {
+  position: relative;
+  overflow: hidden;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -372,15 +375,18 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translatey(100%);
 }
-
-.team__item--member-image {
+.portfolio__cards__image {
   max-width: 100%;
   height: auto;
 }
 
-.skin {
-  position: relative;
-  overflow: hidden;
+.portfolio__cards__image.no-gap {
+  display: block;
+}
+
+.team__item--member-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .team__item--member-image.no-gap {
@@ -467,6 +473,29 @@ button:focus {
   cursor: pointer;
   transform: scale(1.2);
 }
+
+.portfolio__card-body {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.portfolio__card-body--project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.portfolio__card-body--project-category {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
 .accent {
   font-family: "Raleway";
   font-style: normal;
@@ -476,35 +505,24 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
-.card-body {
-  padding: 20px 24px;
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-}
-
-.project-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-
-.project-category {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
-}
-
-.portfolio-nav {
-  color: var(--accent-color);
-}
-
 .footbar {
   display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+.footbar__elements--logo-font {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.footbar__elements {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -514,14 +532,41 @@ button:focus {
   padding-right: 70px;
   background: var(--footbar-background-color);
 }
-.footbar-elements {
-  display: flex;
-  align-items: baseline;
-  flex-direction: row;
+.footbar__elements__adress a {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+  text-decoration: none;
+  transition-property: color transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footbar-social {
-  display: flex;
+.footbar__elements__mail a {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 9px 0;
+  color: var(--footbar-contact-color);
+  text-decoration: underline;
+}
+
+.footbar__elements__telephone a {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footbar-contact-color);
+}
+
+.footbar__elements__adress a:hover,
+.footbar__elements__adress a:focus {
+  color: var(--accent-color);
+  transform: scale(1.2);
+}
+.footbar__social {
   flex-wrap: wrap;
   margin-right: 0;
   margin-left: 0;
@@ -538,7 +583,7 @@ button:focus {
   color: var(--third-color);
 }
 
-.footbar-newsletter {
+.footbar__newsletter {
   position: relative;
   display: flex;
   margin-left: 0;
@@ -546,18 +591,18 @@ button:focus {
   padding-right: 0;
   bottom: 0;
 }
-.newsletter-label {
+.footbar__newsletter-label {
   display: flex;
   flex-direction: column;
   width: 358px;
 }
-.button-position {
+.footbar__button-position {
   position: relative;
   display: flex;
   align-items: end;
   width: 200px;
 }
-.newsletter-text {
+.footbar__newsletter-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -566,7 +611,7 @@ button:focus {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 1);
 }
-.newsletter-button {
+.footbar__newsletter-button {
   position: relative;
   display: flex;
   justify-content: center;
@@ -579,14 +624,14 @@ button:focus {
   border-radius: 4px;
   border: none;
 }
-.joinus {
+.footbar__newsletter__joinus {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   margin-right: 24px;
   color: var(--third-color);
 }
-.input-mail {
+.footbar__newsletter__input-mail {
   width: 358px;
   height: 50px;
   font-size: 16px;
@@ -599,8 +644,8 @@ button:focus {
   background: var(--footbar-background-color);
   color: var(--third-color);
 }
-.input-mail:hover,
-.input-mail:focus {
+.footbar__newsletter__input-mail:hover,
+.footbar__newsletter__input-mail:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -609,19 +654,7 @@ button:focus {
   color: var(--third-color);
 }
 
-.logo-font {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.icon-social-footer {
+.footbar__social__icon-social-footer {
   display: flex;
   margin-top: 20px;
   gap: 10px;
@@ -640,41 +673,6 @@ button:focus {
   --color2: var(--third-color);
   cursor: pointer;
   transform: rotate(360deg);
-}
-
-.address a {
-  display: block;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--third-color);
-  text-decoration: none;
-  transition-property: color transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mail a {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin: 9px 0;
-  color: var(--footbar-contact-color);
-  text-decoration: underline;
-}
-
-.telephone a {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footbar-contact-color);
-}
-
-.address a:hover,
-.address a:focus {
-  color: var(--accent-color);
-  transform: scale(1.2);
 }
 
 .backdrop {
@@ -700,7 +698,7 @@ button:focus {
   border-radius: 4px;
   transform: translate(-50%, -50%);
 }
-.modal-header {
+.modal__title {
   text-align: center;
   font-family: "Roboto";
   font-style: normal;
