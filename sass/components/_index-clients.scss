@@ -1,0 +1,36 @@
+.clients__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  color: var(--main-color);
+}
+
+.clients__set {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.clients__clients-icon {
+  box-sizing: border-box;
+  display: flex;
+  width: 167px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition-property: color border-color transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__clients-icon:hover,
+.clients__clients:focus-visible {
+  --color2: var(--accent-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+  transform: scale(1.2);
+}
