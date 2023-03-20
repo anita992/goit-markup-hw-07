@@ -6,7 +6,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   margin-top: 94px;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .clients__set {
@@ -20,6 +20,7 @@
   display: flex;
   width: 167px;
   height: 92px;
+  fill: $clients-icon-color;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   transition-property: color border-color transform;
@@ -29,8 +30,8 @@
 
 .clients__clients-icon:hover,
 .clients__clients:focus-visible {
-  --color2: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: $accent-color;
+  border-color: $accent-color;
   cursor: pointer;
   transform: scale(1.2);
 }

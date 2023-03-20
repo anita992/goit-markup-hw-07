@@ -1,0 +1,174 @@
+.footbar {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+.footbar__elements--logo-font {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: $accent-color;
+  text-decoration: none;
+}
+.footbar__elements {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 70px;
+  background: $footbar-background-color;
+}
+.footbar__elements__adress a {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $third-color;
+  text-decoration: none;
+  transition-property: color transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footbar__elements__mail a {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 9px 0;
+  color: $footbar-contact-color;
+  text-decoration: underline;
+}
+
+.footbar__elements__telephone a {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footbar-contact-color;
+}
+
+.footbar__elements__adress a:hover,
+.footbar__elements__adress a:focus {
+  color: $accent-color;
+  transform: scale(1.2);
+}
+.footbar__social {
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 70px;
+}
+
+.social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $third-color;
+}
+
+.footbar__newsletter {
+  position: relative;
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  bottom: 0;
+}
+.footbar__newsletter-label {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+}
+.footbar__button-position {
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 200px;
+}
+.footbar__newsletter-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+.footbar__newsletter-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.footbar__newsletter__joinus {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  margin-right: 24px;
+  color: $third-color;
+}
+.footbar__newsletter__input-mail {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: $footbar-background-color;
+  color: $third-color;
+}
+.footbar__newsletter__input-mail:hover,
+.footbar__newsletter__input-mail:focus {
+  outline: none;
+  border-color: $accent-color;
+}
+
+.logo-word {
+  color: $third-color;
+}
+
+.footbar__social__icon-social-footer {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.footer-icon {
+  fill: rgba(255, 255, 255, 0.1);
+  transition-property: fill transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  --color2: #ffffff;
+  fill: $accent-color;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+.main-background-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footbar-background-color;
+}

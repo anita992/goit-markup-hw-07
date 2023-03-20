@@ -1,15 +1,29 @@
+/* fonts */
+
 $font-family: "Roboto", sans-serif;
 $font-second: "Raleway", sans-serif;
 $font-big: 700;
 $font-medium: 500;
+
+/* colors */
+
 $main-color: #212121;
 $secondary-color: #757575;
 $accent-color: #2196f3;
-$thirdcolor: #ffffff;
+$third-color: #ffffff;
 $button-color: #f5f4fa;
 $footbar-background-color: #2f303a;
 $footbar-contact-color: rgba(255, 255, 255, 0.6);
 $border-color: #eeeeee;
 $border-line: #ececec;
+$clients-icon-color: #afb1b8;
+
+/* hover */
 $hover: $accent-color;
 $focus: $accent-color;
+
+/* transition */
+
+$fill-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$visibility-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$background-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

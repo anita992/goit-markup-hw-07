@@ -2,7 +2,7 @@
   display: flex;
 }
 .team--team-background {
-  background-color: var(--button-color);
+  background-color: $button-color;
 }
 
 .team__title {
@@ -12,7 +12,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .team__item--member {
@@ -24,7 +24,7 @@
 .team__item--workers-information {
   flex-direction: column;
   padding: 30px 32px;
-  background-color: var(--third-color);
+  background-color: $third-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -59,7 +59,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 16px;
-  color: var(--secondary-color);
+  color: $secondary-color;
 }
 
 .team__item--icon-social {
@@ -69,7 +69,7 @@
 
 .team__item--team-icon {
   border-radius: 4px;
-  fill: var(--third-color);
+  fill: $third-color;
   transition-property: color fill transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,8 +77,8 @@
 
 .team__item--team-icon:hover,
 .team__item--team-icon:focus {
-  fill: var(--accent-color);
-  --color2: var(--third-color);
+  fill: $accent-color;
+  --color2: #ffffff;
   cursor: pointer;
   transform: rotate(360deg);
 }

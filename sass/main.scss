@@ -1,3 +1,4 @@
+@import "./utils/variables";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/button";
@@ -6,8 +7,9 @@
 @import "./components/index-offer";
 @import "./components/index-modal";
 @import "./components/index-team";
-@import "./components/navigation";
+@import "./components/index-order";
 @import "./components/portfolio";
+
 ul,
 li {
   list-style-type: none;
@@ -33,7 +35,7 @@ p {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--main-color, #212121);
+  color: $main-color;
 }
 .section {
   padding-top: 94px;
@@ -48,4 +50,8 @@ body {
 .grid {
   display: flex;
   gap: 30px;
+}
+.accent {
+  color: $accent-color;
+  fill: $accent-color;
 }
