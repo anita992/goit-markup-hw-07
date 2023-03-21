@@ -34,7 +34,7 @@ p {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family;
   color: $main-color;
 }
 .section {
@@ -54,4 +54,14 @@ body {
 .accent {
   color: $accent-color;
   fill: $accent-color;
+}
+.main-background-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footbar-background-color;
+}
+.bottom-border {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $border-line;
 }
