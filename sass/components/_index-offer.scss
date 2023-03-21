@@ -11,8 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto";
-  font-weight: 700;
+  font-weight: $font-big;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -21,7 +20,7 @@
 }
 .offer__title {
   text-align: center;
-  font-weight: 700;
+  font-weight: $font-big;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;

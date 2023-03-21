@@ -1,3 +1,21 @@
+/* index order button */
+
+.button-index {
+  font-weight: $font-big;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 41px 10px 42px;
+  color: $button-color;
+  background-color: $accent-color;
+  border: 0;
+  border-radius: 4px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* portfolio buttons */
 .button-set {
   display: flex;
   flex-direction: row;
@@ -6,7 +24,7 @@
   gap: 8px;
 }
 .buttons--portfolio {
-  font-weight: 500;
+  font-weight: $font-medium;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
@@ -25,6 +43,59 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
+/* footer button */
+.footer__button--position {
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 200px;
+}
+
+.footer__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+/* modal buttons */
+.send-button {
+  width: 200px;
+  height: 50px;
+  margin: 20px auto 0px auto;
+  background: $accent-color;
+  border-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.send-text {
+  font-weight: $font-big;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 76px;
+  color: $third-color;
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $third-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 button:hover,
 button:focus {
   color: $third-color;
