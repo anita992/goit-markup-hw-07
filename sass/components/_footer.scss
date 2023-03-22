@@ -147,27 +147,7 @@
     border-color: $accent-color;
   }
 }
-.footer__button--position {
-  position: relative;
-  display: flex;
-  align-items: end;
-  width: 200px;
-}
 
-.footer__button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  margin-left: 12px;
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
 .footer__newsletter__joinus {
   font-weight: $font-big;
   font-size: 16px;
