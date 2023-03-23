@@ -1,9 +1,9 @@
-.offer__item--picture {
+.what-we-do__item--picture {
   position: relative;
   height: 294px;
 }
 
-.offer__item--picture > .offer__item--category {
+.what-we-do__item--picture > .what-we-do__item--category {
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -18,7 +18,7 @@
   color: $third-color;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.offer__title {
+.title {
   text-align: center;
   font-weight: $font-big;
   font-size: 36px;

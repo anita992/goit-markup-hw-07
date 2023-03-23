@@ -16,40 +16,40 @@
 .nav-header {
   display: flex;
   font-family: $font-family;
+  margin: 0;
+  padding: 0;
   gap: 46px;
+}
+.nav-header__link {
+  position: relative;
 
-  &__item {
-    font-weight: $font-medium;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: $main-color;
-    transition-property: fill color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      color: $accent-color;
-    }
-    &:focus {
-      color: $accent-color;
-    }
-    &--active {
-      font-family: $font-family;
-      position: relative;
-      color: $accent-color;
+  font-weight: $font-medium;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $main-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.nav-header__link--current {
+  position: relative;
+  color: $accent-color;
 
-      &::after {
-        position: absolute;
-        top: 47px;
-        width: 100%;
-        height: 4px;
-        content: "";
-        display: block;
-        background-color: $accent-color;
-        border-radius: 2px;
-      }
-    }
+  &::after {
+    position: absolute;
+    top: 47px;
+    width: 100%;
+    height: 4px;
+    content: "";
+    display: block;
+    background-color: $accent-color;
+    border-radius: 2px;
   }
 }
 
@@ -59,13 +59,16 @@
   flex-direction: row;
   font-weight: $font-medium;
   margin-right: 0;
-  &__list:first-child {
+  &__item:first-child {
     margin-left: 330px;
   }
 
-  &__list:last-child {
+  &__item:last-child {
     margin-left: 30px;
     margin-right: 0;
+  }
+  &__icon {
+    margin-right: 10px;
   }
 
   &__link {
@@ -83,24 +86,5 @@
       fill: $accent-color;
       transform: scale(1.2);
     }
-
-    &__icon {
-      margin-right: 10px;
-    }
   }
-}
-.active {
-  position: relative;
-  color: $accent-color;
-}
-
-.active::after {
-  position: absolute;
-  top: 47px;
-  width: 100%;
-  height: 4px;
-  content: "";
-  display: block;
-  background-color: $accent-color;
-  border-radius: 2px;
 }

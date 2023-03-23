@@ -27,32 +27,35 @@
           ><span class="accent">Web</span>Studio</a
         >
         <ul class="nav-header">
-          <li class="nav-header__item">
-            <a href="index.html" class="nav-header__item--active">Agencja</a>
+          <li>
+            <a
+              href="index.html"
+              class="nav-header__link nav-header__link--current"
+              >Agencja</a
+            >
           </li>
-          <li class="nav-header__item">
-            <a href="./portfolio.html" class="nav-header__item">Portfolio</a>
+          <li>
+            <a href="./portfolio.html" class="nav-header__link nav-header__link"
+              >Portfolio</a
+            >
           </li>
-          <li class="nav-header__item">
-            <a href="index.html" class="nav-header__item">Kontakt</a>
+          <li>
+            <a href="index.html" class="nav-header__link">Kontakt</a>
           </li>
         </ul>
         <ul class="contact">
-          <li class="contact__list">
-            <a
-              href="mailto:info@devstnav-header__contactudio.com"
-              class="contact__link"
-            >
-              <svg class="contact__link__icon" width="16" height="12">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="contact__list">
+          <li class="contact__item">
             <a href="tel:+48111111111" class="contact__link">
-              <svg class="contact__link__icon" width="10" height="16">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone-1"></use>
               </svg>
               +48 111 111 111</a
@@ -81,7 +84,7 @@
       <section class="section padding-flex">
         <div class="container">
           <ul class="grid">
-            <li class="cards__item">
+            <li class="grid__item">
               <svg class="cards__icon">
                 <use href="./images/icons.svg#icon-antena"></use>
               </svg>
@@ -127,54 +130,54 @@
         </div>
       </section>
       <section class="section">
-        <div class="container offer">
-          <h2 class="offer__title">Czym się zajmujemy</h2>
+        <div class="container what-we-do">
+          <h2 class="title">Czym się zajmujemy</h2>
           <ul class="grid">
             <li>
-              <div class="offer__item--picture">
+              <div class="what-we-do__item--picture">
                 <img
                   src="./images/h2/h2-photo1.jpg"
                   alt="programista wykonuje projekt na komputerze"
                   width="370"
                   height="294"
                 />
-                <p class="offer__item--category">APLIKACJE KOMPUTEROWE</p>
+                <p class="what-we-do__item--category">APLIKACJE KOMPUTEROWE</p>
               </div>
             </li>
 
             <li>
-              <div class="offer__item--picture">
+              <div class="what-we-do__item--picture">
                 <img
                   src="./images/h2/h2-photo2.jpg"
                   alt="parowanie komputera z telefonem "
                   width="370"
                   height="294"
                 />
-                <p class="offer__item--category">APLIKACJE MOBILNE</p>
+                <p class="what-we-do__item--category">APLIKACJE MOBILNE</p>
               </div>
             </li>
             <li>
-              <div class="offer__item--picture">
+              <div class="what-we-do__item--picture">
                 <img
                   src="./images/h2/h2-photo3.jpg"
                   alt="ustawianie kolorów rgb na tablecie"
                   width="370"
                   height="294"
                 />
-                <p class="offer__item--category">ROZWIĄZANIA GRAFICZNE</p>
+                <p class="what-we-do__item--category">ROZWIĄZANIA GRAFICZNE</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section team--team-background">
+      <section class="section grey-background">
         <!-- Our team-->
 
         <div class="container">
           <h2 class="team__title">Nasz zespół</h2>
           <ul class="grid team">
             <li>
-              <div class="team__item--member">
+              <div class="team__image">
                 <img
                   class="team__item--member-image no-gap"
                   src="./images/team/JonDoe1.jpg"
@@ -183,7 +186,7 @@
                   height="260"
                 />
               </div>
-              <div class="team__item--workers-information">
+              <div class="team__item__workers-information">
                 <h3 class="team__item--workers-name">John Doe</h3>
                 <p class="team__item--workers-profession">Product Designer</p>
                 <div class="team__item--icon-social">
@@ -212,7 +215,7 @@
                   height="260"
                 />
               </div>
-              <div class="team__item--workers-information">
+              <div class="team__item__workers-information">
                 <h3 class="team__item--workers-name">John Doe</h3>
                 <p class="team__item--workers-profession">Frontend Developer</p>
                 <div class="team__item--icon-social">
@@ -241,7 +244,7 @@
                   height="260"
                 />
               </div>
-              <div class="team__item--workers-information">
+              <div class="team__item__workers-information">
                 <h3 class="team__item--workers-name">John Doe</h3>
                 <p class="team__item--workers-profession">Marketing</p>
                 <div class="team__item--icon-social">
@@ -270,7 +273,7 @@
                   height="260"
                 />
               </div>
-              <div class="team__item--workers-information">
+              <div class="team__item__workers-information">
                 <h3 class="team__item--workers-name">John Doe</h3>
                 <p class="team__item--workers-profession">UI Designer</p>
                 <div class="team__item--icon-social">
