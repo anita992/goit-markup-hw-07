@@ -1,9 +1,7 @@
-.grid {
-  display: flex;
-  gap: 30px;
+.section-team {
+  background-color: $button-color;
 }
-
-.team__title {
+.section-team__title {
   text-align: center;
   font-weight: $font-big;
   font-size: 36px;
@@ -12,40 +10,36 @@
   margin-bottom: 50px;
   color: $main-color;
 }
-.team__item {
+.grid {
   display: flex;
-  justify-content: center;
+  gap: 30px;
+  &__member {
+    width: auto;
 
-  &--member {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+    &__image {
+      display: block;
+    }
   }
-  &--member-image {
-    max-width: 100%;
-    height: auto;
-  }
-  &--member-image.no-gap {
-    display: block;
-  }
-  &__workers-information {
-    flex-direction: column;
-    padding: 30px 32px;
-    background-color: $third-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  &--workers-name {
+}
+
+.workers-information {
+  flex-direction: column;
+  padding: 30px 32px;
+  background-color: $third-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__workers-name {
     font-weight: $font-medium;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 10px;
-    color: var(--main-color);
+    color: $main-color;
   }
-  &--workers-profession {
+  &__profession {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -53,12 +47,14 @@
     margin-bottom: 16px;
     color: $secondary-color;
   }
-  &--icon-social {
-    display: flex;
-    gap: 10px;
-  }
+}
 
-  &--team-icon {
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__icon {
     border-radius: 4px;
     fill: $third-color;
     transition-property: color fill transform;
@@ -66,8 +62,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &--team-icon:hover,
-  &--team-icon:focus {
+  &__icon:hover,
+  &__icon:focus {
     fill: $accent-color;
     --color2: #ffffff;
     cursor: pointer;

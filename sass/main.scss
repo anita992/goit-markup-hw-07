@@ -2,12 +2,12 @@
 @import "./components/header";
 @import "./components/footer";
 @import "./components/button";
-@import "./components/index-cards";
-@import "./components/index-clients";
-@import "./components/index-offer";
-@import "./components/index-modal";
-@import "./components/index-team";
-@import "./components/index-order";
+@import "./components/cards";
+@import "./components/clients";
+@import "./components/products";
+@import "./components/modal";
+@import "./components/team";
+@import "./components/order";
 @import "./components/portfolio";
 
 ul,
@@ -47,19 +47,12 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-.grid {
-  display: flex;
-  gap: 30px;
-}
+
 .accent {
   color: $accent-color;
   fill: $accent-color;
 }
-.main-background-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: $footbar-background-color;
-}
+
 .grey-background {
   background-color: $button-color;
 }

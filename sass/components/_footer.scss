@@ -4,6 +4,12 @@
   align-items: baseline;
   flex-direction: row;
 
+  &--background {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footbar-background-color;
+  }
+
   &__elements--logo-font {
     display: flex;
     font-family: "Raleway", sans-serif;
