@@ -10,15 +10,11 @@
   margin-bottom: 50px;
   color: $main-color;
 }
-.grid {
+.grid-member {
   display: flex;
   gap: 30px;
-  &__member {
-    width: auto;
-
-    &__image {
-      display: block;
-    }
+  &__image {
+    display: block;
   }
 }
 

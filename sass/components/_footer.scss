@@ -3,12 +3,9 @@
   display: flex;
   align-items: baseline;
   flex-direction: row;
-
-  &--background {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $footbar-background-color;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footbar-background-color;
 
   &__logo-font {
     display: flex;
@@ -23,6 +20,7 @@
     text-decoration: none;
   }
 }
+
 .footer-details {
   flex-direction: column;
   flex-wrap: wrap;
