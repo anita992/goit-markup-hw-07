@@ -85,43 +85,43 @@
         <div class="container">
           <ul class="grid">
             <li class="grid__item">
-              <svg class="cards__icon">
+              <svg class="grid__icon">
                 <use href="./images/icons.svg#icon-antena"></use>
               </svg>
-              <h4 class="cards__title">LOREM IPSUM</h4>
-              <p class="cards__text">
+              <h4 class="grid__title">LOREM IPSUM</h4>
+              <p class="grid__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="cards__item">
-              <svg class="cards__icon">
+            <li class="grid__item card">
+              <svg class="grid__icon">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
-              <h4 class="cards__title">LOREM IPSUM</h4>
-              <p class="cards__text">
+              <h4 class="grid__title">LOREM IPSUM</h4>
+              <p class="grid__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
 
-            <li class="cards__item">
-              <svg class="cards__icon">
+            <li class="grid__item card">
+              <svg class="grid__icon">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
-              <h4 class="cards__title">LOREM IPSUM</h4>
-              <p class="cards__text">
+              <h4 class="grid__title">LOREM IPSUM</h4>
+              <p class="grid__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
 
-            <li class="cards__item">
-              <svg class="cards__icon">
+            <li class="grid__item card">
+              <svg class="grid__icon">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
-              <h4 class="cards__title">LOREM IPSUM</h4>
-              <p class="cards__text">
+              <h4 class="grid__title">LOREM IPSUM</h4>
+              <p class="grid__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -129,42 +129,42 @@
           </ul>
         </div>
       </section>
-      <section class="section products">
+      <section class="section-products">
         <div class="container">
-          <h2 class="products__title">Czym się zajmujemy</h2>
+          <h2 class="section-products__title">Czym się zajmujemy</h2>
           <ul class="grid">
-            <li>
-              <div class="products__item__picture">
+            <li class="grid__item products">
+              <div class="products__picture">
                 <img
                   src="./images/h2/h2-photo1.jpg"
                   alt="programista wykonuje projekt na komputerze"
                   width="370"
                   height="294"
                 />
-                <p class="products__item__category">APLIKACJE KOMPUTEROWE</p>
+                <p class="products__category">APLIKACJE KOMPUTEROWE</p>
               </div>
             </li>
 
             <li>
-              <div class="products__item__picture">
+              <div class="products__picture">
                 <img
                   src="./images/h2/h2-photo2.jpg"
                   alt="parowanie komputera z telefonem "
                   width="370"
                   height="294"
                 />
-                <p class="products__item__category">APLIKACJE MOBILNE</p>
+                <p class="products__category">APLIKACJE MOBILNE</p>
               </div>
             </li>
             <li>
-              <div class="products__item__picture">
+              <div class="products__picture">
                 <img
                   src="./images/h2/h2-photo3.jpg"
                   alt="ustawianie kolorów rgb na tablecie"
                   width="370"
                   height="294"
                 />
-                <p class="products__item__category">ROZWIĄZANIA GRAFICZNE</p>
+                <p class="products__category">ROZWIĄZANIA GRAFICZNE</p>
               </div>
             </li>
           </ul>
@@ -328,68 +328,84 @@
     <footer>
       <section class="footer--background">
         <div class="container footer">
-          <div class="container footer__elements">
-            <a class="footer__elements--logo-font" href="index.html"
+          <div>
+            <a class="footer__logo-font" href="index.html"
               ><span class="accent">Web</span
               ><span class="logo-word">Studio</span></a
             >
-            <address class="footer__elements__adress">
-              <ul>
-                <li>
-                  <a href="https://goo.gl/maps/kf3q6MZRdZTSeFfu9"
-                    >m.Warszawa, Aleje Jerozolimskie 21</a
-                  >
-                </li>
-                <li class="footer__elements__mail">
-                  <a href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="footer__elements__telephone">
-                  <a href="tel:+48111111111">+48 111 111 111</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="container footer__social">
-            <ul>
-              <li><span class="footer__social--text">DOŁĄCZ DO NAS</span></li>
-              <li>
-                <div class="footer__social__icon-social-footer">
-                  <svg class="footer-icon" width="44" height="44">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                  <svg class="footer-icon" width="44" height="44">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                  <svg class="footer-icon" width="44" height="44">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                  <svg class="footer-icon" width="44" height="44">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </div>
+            <ul class="footer-details">
+              <li class="footer-details__address">
+                <a href="https://goo.gl/maps/kf3q6MZRdZTSeFfu9"
+                  >m.Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li class="footer-details__mail">
+                <a href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer-details__telephone">
+                <a href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </div>
-          <form class="cointainer footer__newsletter" name="newstletter-form">
-            <label class="footer__newsletter--label">
-              <span class="footer__newsletter--text"
+          <div class="footer-social">
+            <p class="footer-social__text">DOŁĄCZ DO NAS</p>
+            <ul class="social-elements">
+              <li class="social-elements__item">
+                <svg
+                  class="social-elements__footer-icon"
+                  width="44"
+                  height="44"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="social-elements__item">
+                <svg
+                  class="social-elements__footer-icon"
+                  width="44"
+                  height="44"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li class="social-elements__item">
+                <svg
+                  class="social-elements__footer-icon"
+                  width="44"
+                  height="44"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="social-elements__item">
+                <svg
+                  class="social-elements__footer-icon"
+                  width="44"
+                  height="44"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <form class="footer-newsletter" name="newstletter-form">
+            <label class="footer-newsletter__label">
+              <span class="footer-newsletter__text"
                 >ZAPISZ SIĘ DO NEWSLETTERA</span
               >
               <input
-                class="footer__newsletter__input-mail"
+                class="footer-newsletter__input-mail"
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
               />
             </label>
-            <div class="footer__button--position">
-              <button type="submit" class="footer__button">
-                <span class="footer__newsletter__joinus">Zapisz się</span>
-                <svg class="send-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <button type="submit" class="footer__button">
+              <span class="button-text">Zapisz się</span>
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </section>

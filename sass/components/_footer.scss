@@ -10,7 +10,7 @@
     background-color: $footbar-background-color;
   }
 
-  &__elements--logo-font {
+  &__logo-font {
     display: flex;
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -22,18 +22,18 @@
     color: $accent-color;
     text-decoration: none;
   }
-  &__elements {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 70px;
-    background: $footbar-background-color;
-  }
+}
+.footer-details {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 70px;
+  background: $footbar-background-color;
 
-  &__elements__adress a {
+  &__address a {
     display: block;
     font-style: normal;
     font-size: 14px;
@@ -44,28 +44,45 @@
     transition-property: color transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transform: scale(1.2);
+    }
   }
 
-  &__elements__mail a {
+  &__mail a {
+    display: block;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin: 9px 0;
     color: $footbar-contact-color;
     text-decoration: underline;
+    transition-property: color transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transform: scale(1.2);
+    }
   }
 
-  &__elements__telephone a {
+  &__telephone a {
+    display: block;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $footbar-contact-color;
-  }
-
-  &__elements__adress a:hover,
-  &__elements__adress a:focus {
-    color: $accent-color;
-    transform: scale(1.2);
+    transition-property: color transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transform: scale(1.2);
+    }
   }
 }
 .logo-word {
@@ -74,44 +91,49 @@
 
 /* footer social media section */
 
-.footer__social {
+.footer-social {
   flex-wrap: wrap;
   margin-right: 0;
   margin-left: 0;
   padding-left: 0;
   padding-right: 70px;
-}
 
-.footer__social--text {
-  font-weight: $font-big;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $third-color;
+  &__text {
+    font-weight: $font-big;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $third-color;
+  }
 }
-
-.footer__social__icon-social-footer {
+.social-elements {
   display: flex;
-  margin-top: 20px;
+  width: 206px;
   gap: 10px;
-}
-.footer-icon {
-  fill: rgba(255, 255, 255, 0.1);
-  transition-property: fill transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    --color2: #ffffff;
-    fill: $accent-color;
-    cursor: pointer;
-    transform: rotate(360deg);
+  &__item {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  &__footer-icon {
+    fill: rgba(255, 255, 255, 0.1);
+    transition-property: fill transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      --color2: #ffffff;
+      fill: $accent-color;
+      cursor: pointer;
+      transform: rotate(360deg);
+    }
   }
 }
 /* newsletter */
-.footer__newsletter {
+.footer-newsletter {
   position: relative;
   display: flex;
   margin-left: 0;
@@ -119,12 +141,12 @@
   padding-right: 0;
   bottom: 0;
 
-  &--label {
+  &__label {
     display: flex;
     flex-direction: column;
     width: 358px;
   }
-  &--text {
+  &__text {
     font-weight: $font-big;
     font-size: 14px;
     line-height: 1.14;
@@ -154,7 +176,7 @@
   }
 }
 
-.footer__newsletter__joinus {
+.button-text {
   font-weight: $font-big;
   font-size: 16px;
   line-height: 1.88;
