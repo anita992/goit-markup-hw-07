@@ -16,6 +16,10 @@
     display: flex;
     gap: 30px;
   }
+  &__item {
+    width: 270px;
+    height: 428px;
+  }
   &__image {
     display: block;
   }
